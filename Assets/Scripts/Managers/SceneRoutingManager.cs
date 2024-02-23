@@ -20,7 +20,9 @@ public static class SceneRoutingManager
                 string newSceneName = sceneBaseName + ++sceneNumber;
 
                 if (sceneNumber <= GameStatics.SceneCount)
+                {
                     SceneManager.LoadScene(newSceneName);
+                }
                 else
                 {
                     Debug.Log("Oyun bitti!");

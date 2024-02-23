@@ -12,6 +12,9 @@ public class StartGameSceneScript : MonoBehaviour
     {
         button = GetComponent<Button>();
         button.onClick.AddListener(StartGame);
+
+        string selectPosition = PlayerPrefs.GetString("SelectPosition", "Right");
+        GameStatics.ButtonPosition = selectPosition;
     }
 
     private void StartGame()
